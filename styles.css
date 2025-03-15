@@ -9,12 +9,26 @@
 body {
   font-family: 'Arial', sans-serif;
   background-color: var(--tue-red);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   margin: 0;
   padding: 0;
   display: flex;
   justify-content: center;
   align-items: center;
   min-height: 100vh;
+}
+
+@media screen and (orientation: landscape) {
+  body {
+    background-image: url(/public/images/protest-graffiti-landscape.png);
+  }
+}
+@media screen and (orientation: portrait) {
+  body {
+    background-image: url(/public/images/protest-graffiti-portrait.png);
+  }
 }
 
 .container {
