@@ -45,6 +45,7 @@ body {
 
 .profile {
   position: absolute;
+  inset: 0;
   top: -30px;
 }
 
@@ -57,12 +58,14 @@ body {
 
 h1 {
   font-size: 24px;
+  width: 100%;
 }
 
 p {
   color: #9f9d9d;
   margin-top: -5px;
-  width: 90%;
+  margin-inline: auto;
+  width: 80%;
 }
 
 .links {
