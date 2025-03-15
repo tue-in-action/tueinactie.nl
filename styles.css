@@ -126,6 +126,33 @@ p {
   filter: grayscale(1) contrast(3);
 }
 
+.featured-link {
+  background-image: url(/public/images/FNV-HO-protest.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: repeat-x;
+  background-blend-mode: overlay;
+  background-color: hsla(358, 30%, 30%, 0.8);
+  border-radius: 20px;
+  padding: 10px;
+  filter: contrast(1.5);
+  height: 200px;
+}
+
+.featured-link a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: hsla(358, 20%, 30%, 0.7);
+  height: 100%;
+  width: 100%;
+  border-radius: 10px;
+  color: white;
+  font-size: 20px;
+  font-weight: bolder;
+  text-shadow: 0 0 4px hsla(0, 0%, 0%, 0.8);
+}
+
 .footer {
   margin-top: 30px;
   font-size: 12px;
