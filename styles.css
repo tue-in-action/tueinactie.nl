@@ -79,8 +79,8 @@ p {
 }
 
 .link {
-  background-color: hsla(0, 0%, 0%, 0.4);
-  color: hsla(0, 0%, 100%, 0.9);
+  background-color: hsla(0, 0%, 0%, 0.7);
+  color: hsla(0, 0%, 100%);
   padding: 20px;
   border-radius: 50px;
   text-decoration: none;
@@ -91,20 +91,39 @@ p {
 }
 
 .link:focus {
-  background-color: hsla(358, 55%, 35%, 0.7);
-  color: hsla(0, 0%, 100%);
+  background-color: hsla(0, 0%, 0%, 0.4);
+  color: hsla(0, 0%, 100%, 1);
   border: 2px dashed black;
 }
 
 .link:visited {
-  background-color: hsla(358, 55%, 35%, 0.5);
+  background-color: hsla(358, 35%, 35%, 0.5);
+  color: hsla(0, 0%, 100%, 0.4);
   opacity: 0.2;
 }
 
 .link:hover {
-  background-color: hsl(0, 0%, 0%);
-  color: white;
+  background-color: hsla(358, 55%, 35%, 0.5);
+  color: hsl(0, 0%, 100%);
   transform: translateY(-2px);
+}
+
+.link-icon {
+  width: 24px;
+  display: block;
+  margin-inline: auto;
+  margin-bottom: 6px;
+  opacity: 1;
+}
+
+.link:focus .link-icon {
+  opacity: 1;
+  filter: grayscale(1) contrast(1.5);
+}
+
+.link:hover .link-icon {
+  opacity: 1;
+  filter: grayscale(1) contrast(3);
 }
 
 .footer {
