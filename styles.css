@@ -8,13 +8,14 @@
 
 body {
   font-family: 'Arial', sans-serif;
+  text-shadow: 0 0 4px hsla(0, 0%, 0%, 0.8);
   background-color: var(--tue-red);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   color: white;
   margin: 0;
-  padding: 0;
+  /* padding: 0; */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -140,6 +141,23 @@ p {
   height: 200px;
 }
 
+.upcoming-event {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+  position: relative;
+}
+
+.upcoming-event .upcoming-action {
+  position: relative;
+  width: fit-content;
+  margin-top: -1px;
+  font-weight: 500;
+  color: #ffffff;
+  font-size: 20px;
+}
+
 .featured-link a {
   display: flex;
   align-items: center;
@@ -151,7 +169,6 @@ p {
   color: white;
   font-size: 20px;
   font-weight: bolder;
-  text-shadow: 0 0 4px hsla(0, 0%, 0%, 0.8);
 }
 
 .footer {
