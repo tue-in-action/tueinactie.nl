@@ -15,7 +15,6 @@ body {
   background-repeat: no-repeat;
   color: white;
   margin: 0;
-  /* padding: 0; */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -33,16 +32,25 @@ body {
   }
 }
 
-.container {
+.main-container {
+  display: flex;
   background-color: hsla(0, 0%, 0%, 0.7);
   border-radius: 16px;
   box-shadow: 0 4px 12px hsla(0, 0%, 0%, 0.1);
   width: 90%;
   max-width: 500px;
-  padding: 20px;
+  height: 900px;
   margin-top: 60px;
   text-align: center;
   position: relative;
+}
+
+.content-container {
+  display: flex;
+  width: 100%;
+  margin-top: 200px;
+  justify-content: center;
+  padding: 10px;
 }
 
 .profile {
@@ -72,10 +80,10 @@ p {
 
 .links {
   display: flex;
+  width: 100%;
   flex-direction: column;
   gap: 14px;
-  margin-top: 200px;
-  padding-top: 12px;
+  margin-top: 120px;
   position: relative;
   z-index: 1;
 }
@@ -141,21 +149,92 @@ p {
   height: 200px;
 }
 
-.upcoming-event {
+.upcoming-event-section {
   display: inline-flex;
+  width: 100%;
   flex-direction: column;
   align-items: flex-start;
+  margin-top: 20px;
   gap: 8px;
   position: relative;
 }
 
-.upcoming-event .upcoming-action {
+.upcoming-event-header {
   position: relative;
   width: fit-content;
   margin-top: -1px;
   font-weight: 500;
   color: #ffffff;
-  font-size: 20px;
+  font-size: 18px;
+}
+
+.upcoming-event-section .marquee-container {
+  position: relative;
+  margin-top: -10px;
+  width: 100%;
+  height: 90px;
+  background-color: #00000099;
+}
+
+.upcoming-event-section .marquee {
+  position: absolute;
+  width: 97%;
+  height: fit-content;
+  top: 7px;
+  left: 5px;
+  overflow: hidden;
+}
+
+.marquee-list {
+  display: flex;
+  width: max-content;
+  padding: 0;
+  align-items: center;
+  gap: 30px;
+  position: relative;
+  left: 20px;
+  list-style: none;
+  animation: marquee 20s linear infinite;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(2%);
+  }
+  100% {
+    transform: translateX(-70%);
+  }
+}
+
+.upcoming-event-section img {
+  position: relative;
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+}
+
+.marquee-list .marquee-list-item {
+  position: relative;
+  font-weight: 700;
+  color: yellow;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.marquee-list-item.location {
+  font-weight: 300;
+}
+
+@media (max-width: 1000px) {
+  .upcoming-event .marquee-container {
+    width: 100%;
+  }
+
+  .upcoming-event .marquee {
+    width: 90%;
+    left: 5%;
+  }
 }
 
 .featured-link a {
