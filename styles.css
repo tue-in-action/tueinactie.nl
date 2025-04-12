@@ -51,6 +51,7 @@ body {
   margin-top: 85px;
   justify-content: center;
   padding: 12px;
+  z-index: 1;
 }
 
 .profile {
