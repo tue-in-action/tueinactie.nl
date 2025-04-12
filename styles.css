@@ -39,7 +39,6 @@ body {
   box-shadow: 0 4px 12px hsla(0, 0%, 0%, 0.1);
   width: 90%;
   max-width: 500px;
-  height: 840px;
   margin-block: 60px;
   text-align: center;
   position: relative;
@@ -49,9 +48,10 @@ body {
   display: flex;
   flex-direction: column;
   width: 100%;
-  margin-top: 20px;
+  margin-top: 85px;
   justify-content: center;
   padding: 12px;
+  z-index: 1;
 }
 
 .profile {
@@ -245,12 +245,63 @@ p {
 @media (max-width: 500px) {
   .content-container {
     padding: 10px;
-    margin-top: 40px;
+    margin-top: 90px;
   }
 
   p {
     width: 100%;
   }
+}
+
+.program-card {
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+  padding: 10px;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+  margin-inline: auto;
+  background-color: hsla(0, 100%, 50%, 0.7);
+  aspect-ratio: 1;
+  border-radius: 20px;
+}
+.program-card img {
+  filter: invert(1);
+  margin-bottom: 10px;
+  width: 80px;
+}
+
+.program-card h2 {
+  font-size: 20px;
+  margin: 0;
+}
+
+.program-card .section-description {
+  font-size: 16px;
+  font-weight: 800;
+  text-shadow: none;
+  color: black;
+}
+
+.program-card ol {
+  list-style: none;
+  padding: 0 20px;
+  margin-top: 20px;
+  margin-inline: auto;
+  text-align: left;
+}
+.program-card li {
+  display: flex;
+  flex-direction: row;
+  margin-block: 4px;
+  gap: 14px;
+  font-weight: 600;
+}
+
+.program-card li p {
+  color: white;
+  font-weight: 500;
 }
 
 .featured-link a {
