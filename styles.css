@@ -39,7 +39,6 @@ body {
   box-shadow: 0 4px 12px hsla(0, 0%, 0%, 0.1);
   width: 90%;
   max-width: 500px;
-  height: 840px;
   margin-block: 60px;
   text-align: center;
   position: relative;
@@ -49,7 +48,7 @@ body {
   display: flex;
   flex-direction: column;
   width: 100%;
-  margin-top: 20px;
+  margin-top: 85px;
   justify-content: center;
   padding: 12px;
 }
